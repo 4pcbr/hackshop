@@ -16,6 +16,7 @@ defmodule Hackshop.WebServer do
   end
 
   def run( args ) do
+    # body = Plug.Conn.read_body(conn)
     { :ok, _pid } = Plug.Adapters.Cowboy.http __MODULE__, args
   end
 

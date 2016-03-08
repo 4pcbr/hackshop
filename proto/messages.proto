@@ -1,0 +1,10 @@
+package world;
+message Example {
+  enum Continent {
+    ANTARCTICA = 0;
+    EUROPE = 1;
+  }
+
+  optional Continent continent = 1;
+  optional uint32 id = 2;
+}
